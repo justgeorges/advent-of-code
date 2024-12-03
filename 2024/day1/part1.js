@@ -1,4 +1,4 @@
-import { loadFile } from "./loadFile";
+import { loadFile } from "./util.js";
 
 const data = await loadFile("./location-list.txt");
 const locationArray1 = [];
