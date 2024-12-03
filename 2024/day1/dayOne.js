@@ -38,11 +38,11 @@ const sortedLocArr2 = locationArray2.sort();
 
 // 4) caluclate the difference between each number in order
 
-for (let i = 0; i < locationArray1.length && i < locationArray2.length; i++) {
-  if (locationArray1[i] > locationArray2[i]) {
-    locationDifferenceSum += locationArray1[i] - locationArray2[i];
+for (let i = 0; i < sortedLocArr1.length && i < sortedLocArr2.length; i++) {
+  if (sortedLocArr1[i] > sortedLocArr2[i]) {
+    locationDifferenceSum += sortedLocArr1[i] - sortedLocArr2[i];
   } else {
-    locationDifferenceSum += locationArray2[i] - locationArray1[i];
+    locationDifferenceSum += sortedLocArr2[i] - sortedLocArr1[i];
   }
 }
 
