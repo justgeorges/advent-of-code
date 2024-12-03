@@ -8,3 +8,7 @@ export async function loadFile(location) {
     console.error(err);
   }
 }
+
+export function absoluteDifference(str1, str2) {
+  return Math.abs(Number(str1) - Number(str2));
+}
