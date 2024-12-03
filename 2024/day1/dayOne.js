@@ -1,15 +1,6 @@
-import { promises as fs } from "fs";
+import { loadFile } from "./loadFile";
 
-async function loadFile() {
-  try {
-    const fileData = fs.readFile("./location-list.txt", "utf-8");
-    return fileData;
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-const data = await loadFile();
+const data = await loadFile("./location-list.txt");
 const locationArray1 = [];
 const locationArray2 = [];
 let locationDifferenceSum = 0;
