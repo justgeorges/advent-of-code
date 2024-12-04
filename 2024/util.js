@@ -12,3 +12,7 @@ export async function loadFile(location) {
 export function absoluteDifference(str1, str2) {
   return Math.abs(Number(str1) - Number(str2));
 }
+
+export function mul(x, y) {
+  return x * y;
+}
