@@ -37,7 +37,6 @@ dataToArr.forEach((str) => {
     checkIncriment(splitNumArr) &&
     checkLimit(splitNumArr)
   ) {
-    console.log(splitNumArr);
     safeReportCount++;
   }
 });
