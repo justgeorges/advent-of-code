@@ -1,8 +1,8 @@
-import { loadFile } from "../util.js";
-
-const data = await loadFile("./input.txt");
+import { loadFile, mul } from "../util.js";
 
 const REGEX = /mul\((\d+),(\d+)\)/g;
+
+const data = await loadFile("./input.txt");
 
 const stringifiedData = String(data);
 
@@ -14,9 +14,5 @@ matches.forEach((elem) => {
   const result = eval(elem);
   sum += result;
 });
-
-function mul(x, y) {
-  return x * y;
-}
 
 console.log(sum);
