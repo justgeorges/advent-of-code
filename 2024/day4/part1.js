@@ -6,7 +6,6 @@ const matrix = data.split(`\n`);
 matrix.pop();
 const topDownMatrix = getTopDownMatrix(matrix);
 const diagonalMatrix = getDiagonalMatrix(matrix);
-console.log(diagonalMatrix);
 let total = 0;
 
 const regex = /XMAS/g;
